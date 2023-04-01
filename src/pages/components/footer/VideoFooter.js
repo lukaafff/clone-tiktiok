@@ -2,18 +2,18 @@ import React from "react";
 import "./videoFooter.css"
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 
-function VideoFooter() {
+function VideoFooter({name, descripition, music}) {
     return (
         <div className="videoFooter">
 
             <div className="videoFooter__text">
-                <h3>@Paulo Ebac</h3>
-                <p>Descrição do vídeo</p>
+                <h3>@{name}</h3>
+                <p>{descripition}</p>
 
                 <div className="videoFooter__music">
                     <MusicNoteIcon className="videoFooter_icon" />
                 <div className="videoFooterMusic__text">
-                    <p>Título Música</p>
+                    <p>{music}</p>
                 </div>
 
                 </div>
